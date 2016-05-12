@@ -1,0 +1,19 @@
+<project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>co.j6mes.infra.srf</groupId>
+                <artifactId>srf-proxy</artifactId>
+                <version>1.0.0.4</version>
+                <configuration>
+                    <mainClass>co.j6mes.infra.srf.proxy</mainClass>
+                    <arguments>
+                        <argument>ckan</argument>
+			<argument>web</argument>
+			<argument>5000</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
