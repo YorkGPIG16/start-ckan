@@ -1,10 +1,16 @@
-<project>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>co.j6mes.infra.srf</groupId>
-                <artifactId>srf-proxy</artifactId>
-                <version>1.0.0.4</version>
+<build>  
+	<plugins>  
+  		<plugin>  
+			<groupId>org.codehaus.mojo</groupId>  
+			<artifactId>exec-maven-plugin</artifactId>
+			<version>1.1.1</version>  
+   		
+			<executions>  
+    			<execution>  
+				<phase>test</phase>  
+				<goals>  
+					<goal>java</goal>
+				</goals>  
                 <configuration>
                     <mainClass>co.j6mes.infra.srf.proxy</mainClass>
                     <arguments>
@@ -13,6 +19,8 @@
 			<argument>5000</argument>
                     </arguments>
                 </configuration>
+		</execution>
+		</executions>
             </plugin>
         </plugins>
     </build>
